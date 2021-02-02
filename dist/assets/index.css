@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 70vw;
+  margin: auto;
+}
+
+nav {
+  background-color: black;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  background-color: #333;
+  min-height: calc(100vh - 70px);
+  padding-top: 50px;
+}
