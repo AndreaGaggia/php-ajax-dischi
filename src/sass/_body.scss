@@ -1,0 +1,43 @@
+nav {
+    background-color: $nav_bg;
+    height: $nav_height;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    background-color: $main_bg;
+    min-height: calc(100vh - $nav_height);
+    padding-top: 50px;
+
+    .albums {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .album {
+            width: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            color: $text;
+            background-color: $nav_bg;
+
+            img {
+                max-width: 100%;
+            }
+
+            .title {
+                text-align: center;
+                margin: 15px 0;
+            }
+
+            .author {
+                color: grey;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

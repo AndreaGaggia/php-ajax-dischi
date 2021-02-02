@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-  background-color: black;
+  background-color: #000;
   height: 70px;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@ nav {
 
 main {
   background-color: #333;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - $nav_height);
   padding-top: 50px;
 }
 main .albums {
@@ -37,8 +37,8 @@ main .albums .album {
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
-  color: white;
-  background-color: black;
+  color: #fff;
+  background-color: #000;
 }
 main .albums .album img {
   max-width: 100%;
