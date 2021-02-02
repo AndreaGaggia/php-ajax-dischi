@@ -7,7 +7,24 @@
   \**********************/
 /***/ (() => {
 
+var app = new Vue({
+  el: "#app",
+  data: {
+    albums: null
+  },
+  methods: {
+    getAlbums: function getAlbums() {
+      var _this = this;
 
+      axios.get("./src/php_partials/albs_for_js.php").then(function (response) {
+        _this.albums = response.data;
+      });
+    }
+  },
+  created: function created() {
+    this.getAlbums();
+  }
+});
 
 /***/ }),
 

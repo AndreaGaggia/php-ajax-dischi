@@ -11,26 +11,28 @@
 </head>
 
 <body>
-    <nav>
-        <div class="container">
-            <img src="./dist/assets/img/spotify-2.svg" alt="" height="40" />
-        </div>
-    </nav>
-
-    <main>
-        <div class="container">
-            <div class="albums">
-
-                <div class="album">
-                    <img src="" class="poster">
-                    <h2 class="title"></h2>
-                    <h3 class="author"></h3>
-                    <h4 class="year"></h4>
-                </div>
-
+    <div id="app">
+        <nav>
+            <div class="container">
+                <img src="./dist/assets/img/spotify-2.svg" alt="" height="40" />
             </div>
-        </div>
-    </main>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="albums">
+
+                    <div class="album" v-for="album in albums">
+                        <img :src="album.poster">
+                        <h2 class="title">{{album.title}}</h2>
+                        <h3 class="author">{{album.author}}</h3>
+                        <h4 class="year">{{album.year}}</h4>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

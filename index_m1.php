@@ -26,7 +26,7 @@ include './src/php_partials/albums.php'
             <div class="albums">
                 <?php foreach ($albums as $album => $details) {?>
                 <div class="album">
-                    <img src="<?php echo $details["poster"]; ?>" class="poster">
+                    <img src="<?php echo $details["poster"]; ?>">
                     <h2 class="title"><?php echo $details["title"]; ?></h2>
                     <h3 class="author"><?php echo $details["author"]; ?></h3>
                     <h4 class="year"><?php echo $details["year"]; ?></h4>
@@ -35,10 +35,6 @@ include './src/php_partials/albums.php'
             </div>
         </div>
     </main>
-    <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./dist/assets/index.js"></script>
 </body>
 
 </html>
