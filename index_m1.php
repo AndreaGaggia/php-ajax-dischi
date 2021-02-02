@@ -24,14 +24,14 @@ include './src/php_partials/albums.php'
     <main>
         <div class="container">
             <div class="albums">
+                <?php foreach ($albums as $album => $details) {?>
                 <div class="album">
-                    <?php foreach ($albums as $album => $details) {?>
                     <img src="<?php echo $details["poster"]; ?>" class="poster">
                     <h2 class="title"><?php echo $details["title"]; ?></h2>
                     <h3 class="author"><?php echo $details["author"]; ?></h3>
                     <h4 class="year"><?php echo $details["year"]; ?></h4>
-                    <?php }?>
                 </div>
+                <?php }?>
             </div>
         </div>
     </main>
