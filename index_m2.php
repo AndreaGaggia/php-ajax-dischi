@@ -21,14 +21,12 @@
         <main>
             <div class="container">
                 <div class="albums">
-
                     <div class="album" v-for="album in albums">
-                        <img :src="album.poster">
+                        <img :src="album.poster" />
                         <h2 class="title">{{album.title}}</h2>
                         <h3 class="author">{{album.author}}</h3>
                         <h4 class="year">{{album.year}}</h4>
                     </div>
-
                 </div>
             </div>
         </main>
