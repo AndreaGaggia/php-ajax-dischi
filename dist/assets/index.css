@@ -6,6 +6,8 @@
 
 body {
   font-family: "Ubuntu", sans-serif;
+  min-height: 100vh;
+  background-color: #333;
 }
 
 .container {
@@ -22,7 +24,6 @@ nav {
 
 main {
   background-color: #333;
-  min-height: calc(100vh - $nav_height);
   padding-top: 50px;
 }
 main .albums {

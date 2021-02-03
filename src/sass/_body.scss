@@ -7,7 +7,6 @@ nav {
 
 main {
     background-color: $main_bg;
-    min-height: calc(100vh - $nav_height);
     padding-top: 50px;
 
     .albums {
